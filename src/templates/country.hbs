@@ -1,16 +1,12 @@
-<ul>
-{{#each this}}
-<li>
+<div class="js-country-box">
     <h2>{{name}}</h2>
     <img src="{{flag}}" alt="flag" width="320">
-    <p>Capital: {{capital}}</p>
-    <p>Population: {{population}}</p>
-    <ul>
-        <p>Languages:</p>
+    <p class="js-subtitle">Capital: <span class="js-title">{{capital}}</span></p>
+    <p class="js-subtitle">Population: <span class="js-title">{{population}}</span></p>
+    <ul class="js-countries-list">
+        <p class="js-subtitle">Languages:</p>
         {{#each languages}}
-        <li>{{this.name}}</li>
+        <li class="js-list-item"><span class="js-title">{{this.name}}</span></li>
         {{/each}}
     </ul>
-</li>
-{{/each}}
-</ul>
+</div>
